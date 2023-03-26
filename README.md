@@ -28,3 +28,24 @@ TP6 > D2 (4)
 TP7 > A0
 ```
 ![tempImageywR3NJ](https://user-images.githubusercontent.com/48227459/227752421-3867c94e-72cf-418e-be4f-38cd0624e1b2.gif)
+
+
+Homebridge Config
+```
+{
+            "accessory": "mqttthing",
+            "type": "airPurifier",
+            "name": "UPPÅTVIND",
+            "url": "mqtt://YOURMQTTSERVER:1883",
+            "topics": {
+                "setActive": "/home/data/UPPATVIND/setActive",
+                "getActive": "/home/data/UPPATVIND/getActive",
+                "getCurrentAirPurifierState": "/home/data/UPPATVIND/getCurrentAirPurifierState",
+                "setTargetAirPurifierState": "/home/data/UPPATVIND/setCurrentAirPurifierState",
+                "getTargetAirPurifierState": "/home/data/UPPATVIND/getTargetAirPurifierState",
+                "getFilterChangeIndication": "/home/data/UPPATVIND/getFilterChangeIndication",
+                "getRotationSpeed": "/home/data/UPPATVIND/getRotationSpeed",
+                "setRotationSpeed": "/home/data/UPPATVIND/setRotationSpeed"
+            },
+            "integerValue": "true"
+        }

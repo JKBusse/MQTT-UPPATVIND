@@ -21,8 +21,8 @@ TP10 Motor FG
  ```
  Connection TP > Wemos
  ```
-TP2 > 5V
-TP3 > GND
+TP2 > GND
+TP3 > 5V
 TP4 > D1 (5)
 TP6 > D2 (4)
 TP7 > A0
